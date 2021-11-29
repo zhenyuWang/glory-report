@@ -13,6 +13,7 @@
     "prettier": "prettier -w -u ."
   },
   "gitHooks": {
+    "commit-msg": "node scripts/verifyCommit.cjs",
     "pre-commit": "lint-staged",
     "pre-push": "npm run test"
   },

@@ -1,6 +1,12 @@
+// import chalk from "chalk";
+// import fs from "fs";
+// const msgPath = process.env.GIT_PARAMS;
+// const msg = fs.readFileSync(msgPath, "utf-8").trim();
+
 const chalk = require("chalk");
+const fs = require("fs");
 const msgPath = process.env.GIT_PARAMS;
-const msg = require("fs").readFileSync(msgPath, "utf-8").trim();
+const msg = fs.readFileSync(msgPath, "utf-8").trim();
 
 const commitRE =
   /^(revert: )?(feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types|build)(\(.+\))?: .{1,50}/;
