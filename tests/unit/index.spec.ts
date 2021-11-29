@@ -1,5 +1,5 @@
 import foo from "./foo";
-import Foo from "@/components/my-foo.vue";
+import Foo from "@/components/Foo.vue";
 import { mount } from "@vue/test-utils";
 test("1+1=2", () => {
   expect(foo()).toBe("foo");
