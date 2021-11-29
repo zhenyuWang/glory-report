@@ -1,12 +1,17 @@
 <template>
-  <div class="home t_center">Home</div>
+  <div class="home t_center">
+    Home
+    <el-input v-model="input" placeholder="Please input" />
+    <el-button type="primary">Primary</el-button>
+  </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "HomePage",
   setup() {
-    return {};
+    const input = ref("");
+    return { input };
   },
 });
 </script>
