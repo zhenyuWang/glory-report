@@ -1,1 +1,7 @@
-script
+node_modules
+dist
+src/assets
+src/styles
+scripts
+package.json
+index.html
