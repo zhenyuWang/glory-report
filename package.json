@@ -9,10 +9,10 @@
     "test-e2e": "cypress open",
     "test-e2e-ci": "cypress run",
     "test": "npm run test-unit && npm run test-e2e-ci",
-    "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern"
+    "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern",
+    "prettier": "prettier -w -u ."
   },
   "gitHooks": {
-    "commit-msg": "node scripts/verifyCommit.js",
     "pre-commit": "lint-staged",
     "pre-push": "npm run test"
   },
@@ -48,6 +48,5 @@
     "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.3.0",
     "yorkie": "^2.0.0"
-  },
-  "type": "module"
+  }
 }
