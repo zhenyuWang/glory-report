@@ -22,6 +22,8 @@
     "*": "prettier -w -u"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
     "element-plus": "^1.2.0-beta.4",
     "vue": "^3.2.16",
     "vue-router": "4"

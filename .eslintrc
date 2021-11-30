@@ -14,5 +14,9 @@
   ],
   "parserOptions": {
     "ecmaVersion": 2021
+  },
+  "rules": {
+    // 关闭 ts any type 校验
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
 }
